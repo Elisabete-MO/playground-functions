@@ -11,8 +11,11 @@ function calcArea(a, b) {
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(texto) {
   // seu código aqui
+  let matriz = [];
+  matriz = texto.split(" ");
+   return matriz;
 }
 
 // Desafio 4
