@@ -7,20 +7,27 @@ function compareTrue(a, b) {
 // Desafio 2
 function calcArea(a, b) {
   // seu código aqui
-  return (a * b)/2;
+  return (a * b) / 2;
 }
 
 // Desafio 3
 function splitSentence(texto) {
   // seu código aqui
   let matriz = [];
-  matriz = texto.split(" ");
-   return matriz;
+  matriz = texto.split(' ');
+  return matriz;
 }
 
 // Desafio 4
-function concatName() {
+function concatName(string) {
   // seu código aqui
+
+  let ultimo = 0; primeiro = 0; tamanho = 0; novaString = 0;
+  tamanho = string.length;
+  ultimo = string[tamanho - 1];
+  primeiro = string[0];
+  novaString = ultimo + ', ' + primeiro;
+  return (novaString);
 }
 
 // Desafio 5
