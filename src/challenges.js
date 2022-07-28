@@ -89,25 +89,25 @@ function encode(frase) {
   // seu código aqui
   let resultado = [];
   let arr = frase.split('');
-  for (let i = 0; i < arr.length; i += 1){
+  for (let i = 0; i < arr.length; i += 1) {
     switch (arr[i]) {
-      case 'a': 
-        resultado.push(1);
-        break;
-      case 'e':
-        resultado.push(2);
-        break;
-      case 'i': 
-        resultado.push(3);
-        break;
-      case 'o': 
-        resultado.push(4);
-        break;
-      case 'u': 
-        resultado.push(5);
-        break;
-      default:
-        resultado.push(arr[i]);
+    case 'a':
+      resultado.push(1);
+      break;
+    case 'e':
+      resultado.push(2);
+      break;
+    case 'i':
+      resultado.push(3);
+      break;
+    case 'o':
+      resultado.push(4);
+      break;
+    case 'u':
+      resultado.push(5);
+      break;
+    default:
+      resultado.push(arr[i]);
     }
   }
   return resultado = resultado.join('');
@@ -117,34 +117,53 @@ function decode(frase) {
   // seu código aqui
   let resultado = [];
   let arr = frase.split('');
-  for (let i = 0; i < arr.length; i += 1){
+  for (let i = 0; i < arr.length; i += 1) {
     switch (arr[i]) {
-      case '1': 
-        resultado.push('a');
-        break;
-      case '2':
-        resultado.push('e');
-        break;
-      case '3': 
-        resultado.push('i');
-        break;
-      case '4': 
-        resultado.push('o');
-        break;
-      case '5': 
-        resultado.push('u');
-        break;
-      default:
-        resultado.push(arr[i]);
+    case '1':
+      resultado.push('a');
+      break;
+    case '2':
+      resultado.push('e');
+      break;
+    case '3':
+      resultado.push('i');
+      break;
+    case '4':
+      resultado.push('o');
+      break;
+    case '5':
+      resultado.push('u');
+      break;
+    default:
+      resultado.push(arr[i]);
     }
   }
   return resultado = resultado.join('');
 }
 
 // Desafio 10
-function techList() {
+function techList(tec, pessoa) {
   // seu código aqui
+  let matriz = [];
+  let resultado = {
+    tech: "",
+    name: ""
+  };
+  if (tec.length === 0 || pessoa === '') {
+    return 'Vazio!';
+  } else {
+    tec.sort();
+    for (let i = 0; i < tec.length; i += 1) {
+      resultado = {
+        tech: tec[i],
+        name: pessoa
+      }
+      matriz.push(resultado);
+    }
+  } 
+  return matriz;
 }
+
 
 module.exports = {
   calcArea,
