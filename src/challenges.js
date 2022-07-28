@@ -22,7 +22,10 @@ function splitSentence(texto) {
 function concatName(string) {
   // seu código aqui
 
-  let ultimo = 0; primeiro = 0; tamanho = 0; novaString = 0;
+  let ultimo = 0; 
+  let primeiro = 0; 
+  let tamanho = 0; 
+  let novaString = 0;
   tamanho = string.length;
   ultimo = string[tamanho - 1];
   primeiro = string[0];
@@ -31,8 +34,9 @@ function concatName(string) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+    return (wins * 3 + ties);
 }
 
 // Desafio 6
