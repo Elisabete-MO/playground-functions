@@ -22,9 +22,9 @@ function splitSentence(texto) {
 function concatName(string) {
   // seu código aqui
 
-  let ultimo = 0; 
-  let primeiro = 0; 
-  let tamanho = 0; 
+  let ultimo = 0;
+  let primeiro = 0;
+  let tamanho = 0;
   let novaString = 0;
   tamanho = string.length;
   ultimo = string[tamanho - 1];
@@ -36,7 +36,7 @@ function concatName(string) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-    return (wins * 3 + ties);
+  return (wins * 3 + ties);
 }
 
 // Desafio 6
@@ -44,17 +44,26 @@ function highestCount(entrada) {
   // seu código aqui
   let qtd = 0;
   let maior = Math.max(...entrada);
-  for (i = 0; i < entrada.length; i += 1){
-    if(maior === entrada[i]){
-      qtd +=  1;
+  for (let i = 0; i < entrada.length; i += 1){
+    if (maior === entrada[i]){
+      qtd += 1;
     }
   }
   return qtd;
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+cat1 = Math.abs(cat1 - mouse);
+cat2 = Math.abs(cat2 - mouse);
+  if (cat1 < cat2){
+    return ('cat1');
+  } else if (cat2 < cat1){
+    return ('cat2');
+  } else {
+    return('os gatos trombam e o rato foge');
+  }
 }
 
 // Desafio 8
