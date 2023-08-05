@@ -146,8 +146,8 @@ function techList(tec, pessoa) {
   // seu código aqui
   let matriz = [];
   let resultado = {
-    tech: "",
-    name: ""
+    tech: '',
+    name: '',
   };
   if (tec.length === 0 || pessoa === '') {
     return 'Vazio!';
@@ -156,14 +156,13 @@ function techList(tec, pessoa) {
     for (let i = 0; i < tec.length; i += 1) {
       resultado = {
         tech: tec[i],
-        name: pessoa
-      }
+        name: pessoa,
+      };
       matriz.push(resultado);
     }
-  } 
+  }
   return matriz;
 }
-
 
 module.exports = {
   calcArea,
